@@ -9,28 +9,7 @@ namespace Algorithm_Practice
     class TupleIndexSummation
     {
         //Given an array arr[] and a number num, list the indices of all the tuples in A[] whose summation equals num
-        #region MainFunction
-        public static void Main(string [] args)
-        {
-            int[] arr = new int[6] { 23, 11, 12, 24, 33, 2 }; //2 11 12 23 24 33  
-            int[] sortedArr = MergeSorter(arr);
-            bool check;
-            int num=35;
-            ArrayList resultSet = GetIndex(sortedArr, num, out check);
-            if (check)
-            {
-                foreach (object obj in resultSet)
-                {
-                    Console.Write(obj);
-                }
-            }
-            else 
-            {
-                Console.WriteLine("There are no values whose summation is equal to the given number");
-            }
-            Console.ReadLine();
-        }
-        #endregion
+       
         #region GetIndices
         public static ArrayList GetIndex(int[] arr, int num, out bool flag)
         {
@@ -116,7 +95,28 @@ namespace Algorithm_Practice
             return result.ToArray();
         }
         #endregion
+        
+        #region MainFunction
+        public static void Main(string [] args)
+        {
+            int[] arr = new int[6] { 23, 11, 12, 24, 33, 2 }; //2 11 12 23 24 33  
+            int[] sortedArr = MergeSorter(arr);
+            bool check;
+            int num=35;
+            ArrayList resultSet = GetIndex(sortedArr, num, out check);
+            if (check)
+            {
+                foreach (object obj in resultSet)
+                {
+                    Console.Write(obj);
+                }
+            }
+            else 
+            {
+                Console.WriteLine("There are no values whose summation is equal to the given number");
+            }
+            Console.ReadLine();
+        }
+        #endregion
     }
-
-   
 }
