@@ -10,12 +10,16 @@ namespace Algorithm_Practice
     {
         //Given an array arr[] and a number num, list the indices of all the tuples in A[] whose summation equals num
        
+       //Function to sstore the indices of values whose sum is equal to num.
         #region GetIndices
         public static ArrayList GetIndex(int[] arr, int num, out bool flag)
         {
             flag = false;
             int l = 0;
             int r = (arr.Length-1);
+            //Using a collection to include commas to separate , We can also use List or directly pass an Array 
+            // As ArrayLists tend to be impacting thee performance due to boxing and unboxing of variables. 
+            //Intentionally added here for readability purpose
             ArrayList IndexList = new ArrayList();
             while (l < r)
             {
@@ -38,10 +42,12 @@ namespace Algorithm_Practice
                     r--;
                 }
             }
-
             return IndexList;
         }
         #endregion
+        //Using the Merge sort to get an overall complexity of O(nlogn)
+        // We can reduce the complexity to further O(n) if we know the range of numbers in the array 
+        //We can use the Dictionary class at that point of time
         #region Sorting
         public static int[] MergeSorter(int[] numArr)
         {
@@ -96,6 +102,7 @@ namespace Algorithm_Practice
         }
         #endregion
         
+        // The Main Driver function
         #region MainFunction
         public static void Main(string [] args)
         {
