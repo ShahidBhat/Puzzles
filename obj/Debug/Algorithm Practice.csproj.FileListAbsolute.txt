@@ -1,0 +1,5 @@
+c:\users\shahid bhat\documents\visual studio 2013\Projects\Algorithm Practice\Algorithm Practice\obj\Debug\Algorithm Practice.csprojResolveAssemblyReference.cache
+c:\users\shahid bhat\documents\visual studio 2013\Projects\Algorithm Practice\Algorithm Practice\bin\Debug\Algorithm Practice.exe
+c:\users\shahid bhat\documents\visual studio 2013\Projects\Algorithm Practice\Algorithm Practice\bin\Debug\Algorithm Practice.pdb
+c:\users\shahid bhat\documents\visual studio 2013\Projects\Algorithm Practice\Algorithm Practice\obj\Debug\Algorithm Practice.exe
+c:\users\shahid bhat\documents\visual studio 2013\Projects\Algorithm Practice\Algorithm Practice\obj\Debug\Algorithm Practice.pdb
